@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <!-- Elemen Tanaman (Sirkuit) -->
+  <g fill="none" stroke="#16a34a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Batang Utama -->
+    <path d="M400,750 C400,600 400,500 400,400" />
+    <!-- Daun Kiri Bawah -->
+    <path d="M400,550 C300,550 250,450 300,350 C350,250 400,350 400,400" />
+    <!-- Daun Kanan Bawah -->
+    <path d="M400,450 C500,450 550,350 500,250 C450,150 400,250 400,300" />
+    <!-- Daun Pucuk Atas -->
+    <path d="M400,400 C300,300 350,150 400,100 C450,150 500,300 400,400" />
+  </g>
+
+  <!-- Titik-titik Node (Sensor/IoT) pada Tanaman -->
+  <g fill="#3b82f6">
+    <!-- Node Batang -->
+    <circle cx="400" cy="750" r="8" />
+    <circle cx="400" cy="550" r="6" />
+    <circle cx="400" cy="450" r="6" />
+    <circle cx="400" cy="300" r="5" />
+    <!-- Node Daun Kiri -->
+    <circle cx="300" cy="350" r="8" />
+    <circle cx="330" cy="430" r="5" />
+    <!-- Node Daun Kanan -->
+    <circle cx="500" cy="250" r="8" />
+    <circle cx="470" cy="330" r="5" />
+    <!-- Node Pucuk -->
+    <circle cx="400" cy="100" r="8" />
+    <circle cx="370" cy="220" r="5" />
+    <circle cx="430" cy="220" r="5" />
+  </g>
+
+  <!-- Garis Koneksi Data Keluar (Sinyal/Jaringan) -->
+  <g fill="none" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="6,6">
+    <path d="M300,350 L200,350 L150,300" />
+    <circle cx="150" cy="300" r="4" fill="#0ea5e9" />
+    
+    <path d="M500,250 L600,250 L650,200" />
+    <circle cx="650" cy="200" r="4" fill="#0ea5e9" />
+    
+    <path d="M400,100 L400,50 L450,20" />
+    <circle cx="450" cy="20" r="4" fill="#0ea5e9" />
+    
+    <path d="M400,750 L500,750 L550,700" />
+    <circle cx="550" cy="700" r="4" fill="#0ea5e9" />
+  </g>
+</svg>
